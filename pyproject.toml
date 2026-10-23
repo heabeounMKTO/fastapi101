@@ -1,0 +1,21 @@
+[project]
+name = "fastapi101"
+version = "0.1.0"
+description = "A small FastAPI teaching project (authors and books)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic==1.17.2",
+    "fastapi==0.103.1",
+    "psycopg2-binary>=2.9.10",
+    "pydantic==1.10.13",
+    "python-dotenv==1.0.0",
+    "sqlalchemy==2.0.21",
+    "uvicorn[standard]>=0.35.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx<0.28",
+    "pytest>=9.1.1",
+]
